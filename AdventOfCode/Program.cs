@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using ElvesAccountingSum2020;
 using PasswordPolicyEnforcer;
+using Toboggan;
 
 namespace AdventOfCode
 {
@@ -10,7 +12,7 @@ namespace AdventOfCode
     {
         static void Main()
         {
-            Day2();
+            Day3();
         }
 
         public static void Day1 ()
@@ -46,6 +48,31 @@ namespace AdventOfCode
 
             // Day 1 Part 2
             Console.WriteLine(PasswordPolicy.CheckPasswordsPart2(passwordList).Count());
+        }
+
+        public static void Day3()
+        {
+            var toboggan = new TobogganRide{ Slopes = new List<Tuple<int, int>>{ 
+                new Tuple<int, int>(1,1),
+                new Tuple<int, int>(3,1),
+                new Tuple<int, int>(5,1),
+                new Tuple<int, int>(7,1),
+                new Tuple<int, int>(1,2)
+                } };
+            BigInteger multiply = 0;
+            var result = toboggan.Ride();
+            foreach(var r in result)
+            {
+                if(multiply == 0)
+                {
+                    multiply = r;
+                }
+                else
+                {
+                    multiply *= r;
+                }
+            }
+            Console.WriteLine(multiply);
         }
     }
 }
