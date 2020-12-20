@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ElvesAccountingSum2020\ElvesAccountingSum2020.csproj" />
+    <ProjectReference Include="..\Passport\Passport.csproj" />
     <ProjectReference Include="..\PasswordPolicyEnforcer\PasswordPolicyEnforcer.csproj" />
     <ProjectReference Include="..\Toboggan\Toboggan.csproj" />
   </ItemGroup>

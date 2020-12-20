@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Numerics;
 using ElvesAccountingSum2020;
+using Passport;
 using PasswordPolicyEnforcer;
 using Toboggan;
 
@@ -12,7 +14,7 @@ namespace AdventOfCode
     {
         static void Main()
         {
-            Day3();
+            Day4();
         }
 
         public static void Day1 ()
@@ -73,6 +75,11 @@ namespace AdventOfCode
                 }
             }
             Console.WriteLine(multiply);
+        }
+
+        public static void Day4()
+        {
+            Console.WriteLine(PassportController.NumberOfValidPassports(File.ReadAllText(@"..\..\..\..\Passport\Passports.dat")));
         }
     }
 }
