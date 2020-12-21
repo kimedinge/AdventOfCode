@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Numerics;
+using BoardingPass;
 using ElvesAccountingSum2020;
 using Passport;
 using PasswordPolicyEnforcer;
@@ -14,7 +15,7 @@ namespace AdventOfCode
     {
         static void Main()
         {
-            Day4();
+            Day5();
         }
 
         public static void Day1 ()
@@ -80,6 +81,11 @@ namespace AdventOfCode
         public static void Day4()
         {
             Console.WriteLine(PassportController.NumberOfValidPassports(File.ReadAllText(@"..\..\..\..\Passport\Passports.dat")));
+        }
+
+        public static void Day5()
+        {
+            Console.WriteLine(BoardingPassController.FindMissingSeat(File.ReadAllText(@"..\..\..\..\BoardingPass\BoardingPasses.dat")));
         }
     }
 }
