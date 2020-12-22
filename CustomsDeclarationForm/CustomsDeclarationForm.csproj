@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="BoardingPasses.dat~RF529da0b.TMP" />
+    <None Remove="CustomDeclarationController.cs~RF560f9ad.TMP" />
   </ItemGroup>
 
 </Project>
