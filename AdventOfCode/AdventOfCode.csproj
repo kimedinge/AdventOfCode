@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BagageHandling\BagageHandling.csproj" />
     <ProjectReference Include="..\BoardingPass\BoardingPass.csproj" />
     <ProjectReference Include="..\CustomsDeclarationForm\CustomsDeclarationForm.csproj" />
     <ProjectReference Include="..\ElvesAccountingSum2020\ElvesAccountingSum2020.csproj" />

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Numerics;
+using BagageHandling;
 using BoardingPass;
 using CustomsDeclarationForm;
 using ElvesAccountingSum2020;
@@ -16,7 +17,7 @@ namespace AdventOfCode
     {
         static void Main()
         {
-            Day6();
+            Day7();
         }
 
         public static void Day1 ()
@@ -92,6 +93,11 @@ namespace AdventOfCode
         public static void Day6()
         {
             Console.WriteLine(CustomDeclarationController.CountEveryoneAnswers(File.ReadAllText(@"..\..\..\..\CustomsDeclarationForm\Answers.dat")));
+        }
+
+        public static void Day7()
+        {
+            Console.WriteLine(BagageValidation.CountNeededContainedBags(File.ReadAllText(@"..\..\..\..\BagageHandling\BagageRules.dat")));
         }
     }
 }
