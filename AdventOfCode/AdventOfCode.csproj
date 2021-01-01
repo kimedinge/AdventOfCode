@@ -10,6 +10,7 @@
     <ProjectReference Include="..\BoardingPass\BoardingPass.csproj" />
     <ProjectReference Include="..\CustomsDeclarationForm\CustomsDeclarationForm.csproj" />
     <ProjectReference Include="..\ElvesAccountingSum2020\ElvesAccountingSum2020.csproj" />
+    <ProjectReference Include="..\Gamepad\Gamepad.csproj" />
     <ProjectReference Include="..\Passport\Passport.csproj" />
     <ProjectReference Include="..\PasswordPolicyEnforcer\PasswordPolicyEnforcer.csproj" />
     <ProjectReference Include="..\Toboggan\Toboggan.csproj" />

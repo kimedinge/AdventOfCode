@@ -7,6 +7,7 @@ using BagageHandling;
 using BoardingPass;
 using CustomsDeclarationForm;
 using ElvesAccountingSum2020;
+using Gamepad;
 using Passport;
 using PasswordPolicyEnforcer;
 using Toboggan;
@@ -17,7 +18,7 @@ namespace AdventOfCode
     {
         static void Main()
         {
-            Day7();
+            Day8();
         }
 
         public static void Day1 ()
@@ -98,6 +99,11 @@ namespace AdventOfCode
         public static void Day7()
         {
             Console.WriteLine(BagageValidation.CountNeededContainedBags(File.ReadAllText(@"..\..\..\..\BagageHandling\BagageRules.dat")));
+        }
+
+        public static void Day8()
+        {
+            Console.WriteLine(BootCode.Run(File.ReadAllText(@"..\..\..\..\Gamepad\Boot.code")));
         }
     }
 }
