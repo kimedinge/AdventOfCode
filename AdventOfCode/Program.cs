@@ -11,6 +11,7 @@ using Gamepad;
 using Passport;
 using PasswordPolicyEnforcer;
 using Toboggan;
+using XMAS;
 
 namespace AdventOfCode
 {
@@ -18,7 +19,7 @@ namespace AdventOfCode
     {
         static void Main()
         {
-            Day8();
+            Day9();
         }
 
         public static void Day1 ()
@@ -104,6 +105,11 @@ namespace AdventOfCode
         public static void Day8()
         {
             Console.WriteLine(BootCode.Run(File.ReadAllText(@"..\..\..\..\Gamepad\Boot.code")));
+        }
+
+        public static void Day9()
+        {
+            Console.WriteLine(Parser.GetContigousSumFirstLast(File.ReadAllText(@"..\..\..\..\XMAS\XMAS.dat")));
         }
     }
 }

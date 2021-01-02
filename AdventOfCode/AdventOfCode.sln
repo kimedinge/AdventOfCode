@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BagageHandling", "..\Bagage
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamepad", "..\Gamepad\Gamepad.csproj", "{807453F3-5C92-46B4-B000-BFAA077C2574}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMAS", "..\XMAS\XMAS.csproj", "{3F83667A-17D9-45C5-BB8D-9B93960734CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{807453F3-5C92-46B4-B000-BFAA077C2574}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{807453F3-5C92-46B4-B000-BFAA077C2574}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{807453F3-5C92-46B4-B000-BFAA077C2574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F83667A-17D9-45C5-BB8D-9B93960734CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F83667A-17D9-45C5-BB8D-9B93960734CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F83667A-17D9-45C5-BB8D-9B93960734CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F83667A-17D9-45C5-BB8D-9B93960734CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
